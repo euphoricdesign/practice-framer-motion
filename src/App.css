@@ -1,38 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .App {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+#colosalSvg {
+  width: 800px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#colosalSvg > path {
+  stroke: white;
+  stroke-width: 2px;
+}
+
+#shingekiLogo {
+  width: 800px;
+  margin: 300px auto 0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#shingekiLogo > path {
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  color: white;
   text-align: center;
+  font-size: 50px;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-container {
+  height: 100vh;
+  padding-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-container > h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.about-desc{
+  width: 90%;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-desc > p {
+  line-height: 1.5;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#titan {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#titan > path {
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.newsletter-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.newsletter-container > h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newsletter-button {
+  border:none;
+  color: black;
+  background-color: white;
+  display: block;
+  width: 300px;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form {
+  background-color: #fff;
+  color: black;
+  padding: 30px;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
 }
